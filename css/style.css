@@ -1,0 +1,152 @@
+
+.html{
+    font-size:  62.5%
+
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.gridPerros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+
+.gridGatos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.gridServicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+}
+
+ul li {
+    margin: 0   15px;
+    font-size:  40px;
+}
+
+
+.body  {
+    background-image: url('../assets/bg.png');  
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+
+.bodyPerro  {
+    background-image: url('../assets/mascota01.png');    
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;    
+}
+
+.verde {
+    font-size: 2rem;
+    color: green;
+}
+
+.naranja {
+    font-size: 2rem;
+    color: orangered;
+}
+
+
+.fuente-relativa-1rem{
+    font-size: 1.5rem;
+    color: coral;
+    
+}
+
+.fuente-relativa-2rem{
+    font-size: 2rem;
+    color: blueviolet ;
+}
+
+.fuente-relativa-3rem{
+    font-size: 3rem;
+    color: blue;
+}
+
+.fuente-relativa-4rem{
+    font-size: 4rem;
+    
+}
+
+.fuente-relativa-5rem{
+    font-size: 5rem;
+}
+
+.image33 {
+    width: 100%;
+    height: 200px;
+    
+}
+
+.rojo {
+    color: red;
+    font-size: 1rem;
+}
+
+.contenedor {
+    width: 200px;
+    height: 200px;
+}
+
+
+.fondo{
+    width: 200px;
+    height: 200px;
+}
+
+
+/* Media Query */
+@media (max-width: 768px ) {
+
+    header {
+        flex-direction:  column;
+    }
+
+    .grid {
+        grid-template-columns: 2fr;    
+    }
+
+}
+
+@media (max-width: 480px ) {
+    ul{
+        display: none;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;    
+    }
+    p {
+        display: none;
+    }
+    
+}
